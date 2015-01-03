@@ -26,7 +26,14 @@
             <p class="gap">
                 This plugin is lightweight and will suit your needs if you want to build a grid of items using columns with equal widths.
             </p>
-            <div class="clear"></div>
+            <p class="gap">
+                <a class="anchor" href="#demo">Demo</a>
+                <a class="anchor" href="#installation">Installation</a>
+                <a class="anchor" href="#usage">Basic usage</a>
+                <a class="anchor" href="#api">API</a>
+                <a class="anchor" href="#changelog">Changelog</a>
+            </p>
+            <div class="clear" id="demo"></div>
             <h2 class="gap">Demo</h2>
             <p class="gap">
                 The screen on the right shows a demo of Elastic Columns.<br />
@@ -38,69 +45,69 @@
                 <button class="event-reorder">Randomly reorder items</button>
                 <span class="loader"></span>
             </p>
-            <div class="clear"></div>
+            <div class="clear" id="installation"></div>
             <h2 class="gap">Installation</h2>
             <p class="gap">
-                You can chekout the Git repository or use bower:
+                The easiest method with <a href="http://bower.io/" target="_blank">Bower</a>:
             </p>
             <pre class="gap">bower install elastic-columns</pre>
-            <div class="clear"></div>
-            <h2 class="gap">Options</h2>
-            <h3 class="gap">Columns count</h3>
-            <pre class="tiny-gap">$('.container').elasticColumns({columns: 3});</pre>
-            <p class="tiny gap">
-                You probably want to set a number of colums to use.
-                The value may be changed later using the plugin API.
-            </p>
-            <h3 class="gap">Margins</h3>
-<pre class="tiny-gap">$('.container').elasticColumns(
-{
-    innerMargin: 10, // the gap between two tiles
-    outerMargin: 20  // the gap between the tiles and
-                        the edge of the container
-});</pre>
-            <p class="tiny gap">
-                You can tell the plugin to use margins if you don't want to set them yourself in your CSS styles.
-            </p>
-            <div class="clear"></div>
-            <h2 class="gap">API</h2>
             <p class="gap">
-                The plugin provides a very simple API.<br />
-                Actually, you will only need a few things:
+                If you don't use Bower, you can checkout the Git repository and install the
+                minified script whenever you want in your project.
             </p>
+            <div class="clear" id="usage"></div>
+            <h2 class="gap">Basic usage</h2>
+            <p class="tiny-gap">
+                This code will set the position of the children nodes of your container.
+            </p>
+<pre class="gap">$('.container').elasticColumns(
+{
+    columns:        3,  // the number of colums
+    innerMargin:    10, // the gap between two tiles
+    outerMargin:    20  // the gap between the tiles and
+                           the edge of the container
+});</pre>
+            <div class="clear" id="api"></div>
+            <h2 class="gap">API</h2>
             <h3 class="gap">Refreshing the layout</h3>
+            <p class="tiny-gap">
+                You may want to refresh the layout when the user resizes the window,
+                or when you add new items to the grid (by appending nodes to your container).<br />
+            </p>
             <pre class="tiny-gap">$('.container').elasticColumns('refresh');</pre>
-            <p class="tiny gap">
-                You may want to refresh the layout when the user resizes the window, or when you add new items to the grid.<br />
-                To insert new content, you may just append it to your container; the plugin will handle it.<br />
-                <em>If you append pictures, be sure to wait them to be loaded before refreshing the layout, or the calculations may be false.</em>
+            <p class="gap">
+                <em>
+                    If you append pictures, be sure to wait for them to be loaded before refreshing the layout,
+                    or the calculations may be false.
+                </em>
             </p>
             <h3 class="gap">Modifying settings on the fly</h3>
+            <p class="tiny-gap">
+                You can change the plugin settings at any time.
+            </p>
             <pre class="tiny-gap">$('.container').elasticColumns('set', 'columns', 4);</pre>
-            <p class="tiny gap">
-                What if you are building a responsive website ?<br />
-                You may want to change the number of columns depending on the container width.<br />
+            <p class="gap">
                 <em>When you are updating a parameter, don't forget to refresh the grid.</em>
             </p>
             <h3 class="gap">Destroying the layout</h3>
-            <pre class="tiny-gap">$('.container').elasticColumns('destroy');</pre>
-            <p class="tiny gap">
-                If you want to restore the layout to its initial state.
+            <p class="tiny-gap">
+                You can restore the layout to its initial state.
             </p>
+            <pre class="gap">$('.container').elasticColumns('destroy');</pre>
             <h3 class="gap">Ignoring items</h3>
-            <pre class="tiny-gap">&lt;div class="item elastic-columns-ignore"&gt;&lt;/div&gt;</pre>
-            <p class="tiny gap">
-                If may add the <code>elastic-columns-ignore</code> class to some items if you don't want them to be positionned on the grid.<br />
+            <p class="tiny-gap">
+                You may add the <code>elastic-columns-ignore</code> class to some items if you don't want them to be positionned on the grid.<br />
                 This can be useful if you are filtering the grid content and don't want to remove items on the fly.
             </p>
-            <div class="clear"></div>
+            <pre class="gap">&lt;div class="item elastic-columns-ignore"&gt;&lt;/div&gt;</pre>
+            <div class="clear" id="changelog"></div>
             <h2 class="gap">Changelog</h2>
             <h3 class="tiny-gap">0.1.1</h3>
-            <p class="tiny gap">
+            <p class="gap">
                 Added a method to remove the styles set by the plugin.
             </p>
             <h3 class="tiny-gap">0.1</h3>
-            <p class="tiny gap">
+            <p class="gap">
                 Initial version.
             </p>
         </div>
