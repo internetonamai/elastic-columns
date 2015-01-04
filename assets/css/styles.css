@@ -105,13 +105,13 @@ body
 
 .about pre
 {
-    border                : 1px solid #f3b2a0;
-    background            : #fdf9ee;
-    padding               : 10px 10px 12px 10px;
-    border-radius         : 4px;
-    color                 : #3a3a3a;
-    overflow              : hidden;
-    margin                : 0 20px 20px 20px;
+    border        : 1px solid #f3b2a0;
+    background    : #fdf9ee;
+    padding       : 10px 10px 12px 10px;
+    border-radius : 4px;
+    color         : #3a3a3a;
+    overflow      : hidden;
+    margin        : 0 20px 20px 20px;
 }
 
 .about code
@@ -130,19 +130,19 @@ body
 
 .about button
 {
-    float                 : left;
-    padding               : 8px 16px 8px 16px;
-    margin                : 0 5px 0 0;
-    border                : 0;
-    background            : #5ba1bf;
-    color                 : #ffffff;
-    text-shadow           : 0 1px #4e89a3;
-    font-size             : 14px;
-    font-weight           : 500;
-    cursor                : pointer;
-    border-radius         : 3px;
-    outline               : 0;
-    box-shadow            : 0 4px #4e89a3;
+    float         : left;
+    padding       : 8px 16px 8px 16px;
+    margin        : 0 5px 0 0;
+    border        : 0;
+    background    : #5ba1bf;
+    color         : #ffffff;
+    text-shadow   : 0 1px #4e89a3;
+    font-size     : 14px;
+    font-weight   : 500;
+    cursor        : pointer;
+    border-radius : 3px;
+    outline       : 0;
+    box-shadow    : 0 4px #4e89a3;
 }
 
 .about button:hover
@@ -167,3 +167,25 @@ body
     background : url(images/loader.gif) no-repeat 0 0;
 }
 
+.about .footer
+{
+    font-size  : 14px;
+    position   : relative;
+    width      : 830px;
+    text-align : center;
+    color      : #999999;
+    width      : 100%;
+    margin     : 10px 0 20px 0;
+}
+
+.about .footer a,
+.about .footer a:visited
+{
+    color           : #999999;
+    text-decoration : none;
+}
+
+.about .footer a:hover
+{
+    text-decoration : underline;
+}
