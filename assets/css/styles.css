@@ -167,24 +167,23 @@ body
     background : url(images/loader.gif) no-repeat 0 0;
 }
 
-.about .footer
+
+.footer
 {
-    font-size  : 14px;
-    position   : relative;
-    text-align : center;
-    color      : #999999;
-    width      : 100%;
-    margin     : 10px 0 20px 0;
+    width       : 100%;
+    margin      : 10px 0 20px 0;
+    font-family : 'Roboto', sans-serif;
+    font-size   : 14px;
+    font-weight : 300;
+    text-align  : center;
+    color       : #b3b0a8;
 }
 
-.about .footer a,
-.about .footer a:visited
+.footer a,
+.footer a:hover,
+.footer a:visited
 {
     color           : #999999;
     text-decoration : none;
-}
-
-.about .footer a:hover
-{
-    text-decoration : underline;
+    border-bottom   : 1px dashed #bababa;
 }
